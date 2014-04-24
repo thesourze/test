@@ -1,0 +1,21 @@
+name: consoleonly
+version: 2.6
+main: info.havnes.consoleonly.consoleonly
+description: forhindre at loggen fylles opp av skit!
+
+permissions:
+    con.*:
+        description: Bruke alle motd kommandoer.
+        children:
+            con.op: true
+            con.set: true
+            con.deop.default: true
+        default: false
+    con.deop.lasse.teodor:
+        description: bruke console only som OP!
+        default: false
+    con.deop.notawake:
+        description: bruke console only som OP!
+        default: false
+    con.deop.default:
+        default: false
